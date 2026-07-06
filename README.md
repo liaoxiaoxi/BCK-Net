@@ -152,33 +152,6 @@ The four moving infrared small target detection datasets used in this work are p
 
   * [DTUM GitHub](https://github.com/TinaLRJ/Multi-frame-infrared-small-target-detection-DTUM)
 
-### Dataset Organization
-
-Please organize the datasets as follows:
-
-```text
-BCK-Net/
-├── DAUB/
-│   ├── train.txt
-│   ├── test.txt
-│   ├── images/
-│   └── masks/
-├── IRDST/
-│   ├── train.txt
-│   ├── test.txt
-│   ├── images/
-│   └── masks/
-├── IRSTD-UAV/
-│   ├── train/
-│   └── test/
-├── NUDT-MIRSDT/
-│   ├── train/
-│   └── test/
-├── train.py
-├── test.py
-├── koopman_dataset_factory.py
-└── kst_net_tip_v2.py
-```
 
 Please make sure the paths in `train.txt` and `test.txt` are consistent with your local dataset structure.
 
