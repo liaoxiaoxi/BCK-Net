@@ -656,7 +656,7 @@ def train_one_epoch(model, loader, optimizer, criterion, device, scaler=None, ep
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset_name", type=str, default="daub", choices=["daub", "irdst", "irstd_uav"])
+    parser.add_argument("--dataset_name", type=str)
     parser.add_argument("--root", type=str, default="DAUB")
     parser.add_argument("--train_meta", type=str, default="DAUB/train.txt")
     parser.add_argument("--val_meta", type=str, default="DAUB/test.txt")

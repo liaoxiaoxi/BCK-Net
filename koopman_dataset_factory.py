@@ -42,6 +42,11 @@ def build_dataset(
         train_set = IRSTDUAVDataset(root=root, split=train_meta, T_clip=T_clip)
         val_set = IRSTDUAVDataset(root=root, split=val_meta, T_clip=T_clip)
         return train_set, val_set
+    elif dataset_name == "NUDT_MIRSDT":
+        # IRSTDUAVDataset 的接口是 split，不是 list_file
+        train_set = NUDTMIRSDTDataset(root=root, split=train_meta, T_clip=T_clip)
+        val_set = NUDTMIRSDT Dataset(root=root, split=val_meta, T_clip=T_clip)
+        return train_set, val_set
 
     else:
         raise ValueError(f"Unsupported dataset_name: {dataset_name}")
